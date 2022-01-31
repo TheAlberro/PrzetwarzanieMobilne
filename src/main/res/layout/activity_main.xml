@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baby_blue1"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/numans"
+        android:text="Hello again!"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/numans"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="60dp"
+        android:onClick="Save"
+        android:text="Log in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordLogin" />
+
+    <EditText
+        android:id="@+id/PasswordLogin"
+        android:layout_width="330dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:hint="Your password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/EmailLogin"
+        android:layout_width="330dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:hint="Your e-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createAccount"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/numans"
+        android:onClick="createAcc"
+        android:text="@string/register_here"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Save"
+        app:rippleColor="@color/serenity"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/numans"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/numans"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailLogin" />
+    <![CDATA[
+
+    app:layout_constraintTop_toBottomOf="@+id/textView"
+    tools:layout_editor_absoluteX="158dp" />
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

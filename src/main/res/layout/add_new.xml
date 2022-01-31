@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baby_blue1">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/timeButton"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/numans"
+        android:onClick="popTimePicker"
+        android:text="Select Time"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="60dp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_desc"
+        app:rippleColor="@color/serenity"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <EditText
+        android:id="@+id/add_new_title"
+        android:layout_width="330dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:hint="Enter title"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+    <EditText
+        android:id="@+id/add_new_desc"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:fontFamily="@font/numans"
+        android:hint="Enter description"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_title" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="375dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeButton">
+
+        <RadioButton
+            android:id="@+id/radioProgress"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/numans"
+            android:text="in progress"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="133dp" />
+
+        <RadioButton
+            android:id="@+id/radioLater"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/numans"
+            android:text="to be done later"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioDone"
+            android:layout_width="99dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:checked="true"
+            android:fontFamily="@font/numans"
+            android:text="already done"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="272dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioPublic"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/numans"
+            android:text="Public"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioPrivate"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:checked="true"
+            android:fontFamily="@font/numans"
+            android:text="Private"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/numans"
+        android:text="Add a task"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/numans"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/numans"
+        android:text="Task"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_title" />
+
+    <Button
+        android:id="@+id/add_new_save"
+        android:layout_width="144dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/numans"
+        android:text="Save"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_new_show"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="144dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/numans"
+        android:text="Show all"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="@color/serenity"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/clock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_desc" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

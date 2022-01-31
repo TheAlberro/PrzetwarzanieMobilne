@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Single List Item Design -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baby_blue1"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/mission_title"
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/numans"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/acceptRequest"
+        android:layout_width="130dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/numans"
+        android:text="Accept"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mission_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/declineRequest"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="130dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/numans"
+        android:text="Decline"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mission_title"
+        app:rippleColor="@color/serenity"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

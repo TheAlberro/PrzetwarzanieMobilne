@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink">#ffc0cb </color>
+    <color name="grey">#dcdcdc </color>
+    <color name="green">#00ff00 </color>
+    <color name="calendar_number">#c0c0c0 </color>
+    <color name="baby_blue">#d4f1f4</color>
+    <color name="tiffany_blue">#A4E5E0</color>
+    <color name="blue_grotto">#189AB4</color>
+    <color name="mint">#ECFDF1</color>
+    <color name="serenity">#D0E6F0</color>
+    <color name="baby_blue1">#C5E3F2</color>
+    <color name="turquoise">#01B9CC</color>
+
+   <!-- <color name="colorPrimary">#d32f2f</color>
+    <color name="colorPrimaryDark">#c72c2c</color>
+    <color name="colorAccent">#FFFFFF</color> -->
+
+
+    <color name="colorPrimary">#6361F4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+</resources>
